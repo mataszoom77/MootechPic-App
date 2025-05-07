@@ -1,28 +1,47 @@
 {
   "expo": {
-    "name": "Learning",
-    "slug": "Learning",
+    "name": "Mootech PIC",
+    "slug": "mootech-pic",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/app_logo.png",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFFFFF"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.yourcompany.mootechpic",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+       "NSCameraUsageDescription": "We need to access your camera to take photos for your requests",
+       "NSPhotoLibraryUsageDescription": "We need to access your photo library to select images for your requests",
+       "NSPhotoLibraryAddUsageDescription": "We need permission to save photos you take"
+      }
     },
     "android": {
+      "package": "com.yourcompany.mootechpic",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/app_logo.png",
+        "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/Logo.png"
+    },
+    "extra": {
+            "eas": {
+              "projectId": "a80c8b8d-e1c6-4c12-afad-10ba147ecf1a"
+            },
+            "API_BASE_URL": "https://mootechpic-api.fly.dev"
+           }
   }
 }
